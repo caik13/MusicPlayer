@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">仿酷狗音乐</string>
+    <string name="login_btn_text">登录</string>
+    <string name="native_music_text">本地音乐</string>
+    <string name="native_music_count_text">102首</string>
+    <string name="btn_native_i_like_text">我喜欢</string>
+    <string name="btn_native_my_songs_text">我的歌单</string>
+    <string name="btn_native_download_text">下载管理</string>
+    <string name="btn_native_nearlyplay_text">最近播放</string>
+    <string name="btn_ic_navigation_discovery_text">乐库</string>
+    <string name="btn_ic_navigation_singer_text">歌手</string>
+    <string name="btn_ic_navigation_mv_text">MV</string>
+    <string name="btn_ic_navigation_nearby_text">附近</string>
+    <string name="btn_ic_navigation_more_text">更多</string>
+    <string name="title_activity_local_music_list">LocalMusicListActivity</string>
+    <string name="btn_ic_navigation_more_crbt_text">彩铃</string>
+    <string name="btn_ic_navigation_more_kg_ringtone_text">铃声</string>
+    <string name="btn_ic_navigation_more_kg_fm_text">收音机</string>
+    <string name="btn_ic_navigation_more_kg_fx_text">K歌女神</string>
+    <string name="btn_ic_navigation_more_kg_kymarket_text">酷游榜</string>
+    <string name="btn_ic_navigation_more_monthlytraffic_text">包流量畅听</string>
+    <string name="btn_ic_navigation_more_musichunter_text">听歌识曲</string>
+    <string name="btn_ic_navigation_more_scantransfer_text">扫描和传歌</string>
+    <string name="btn_ic_navigation_more_musicalarm_text">定时退出</string>
+    <string name="btn_ic_navigation_more_equalizer_text">音效</string>
+    <string name="btn_ic_navigation_more_settings_text">设置</string>
+    <string name="change_style_text">换肤</string>
+    <string name="yijian_text">意见反馈</string>
+
+    <!-- 歌手界面 -->
+    <string name="singer_tab_navigation_huayu_text">华语</string>
+    <string name="singer_tab_navigation_oumei_text">欧美</string>
+    <string name="singer_tab_navigation_rihan_text">日韩</string>
+    <string name="singer_tab_man_text">男</string>
+    <string name="singer_tab_wommen_text">女</string>
+    <string name="singer_tab_man_wommen_text">组合</string>
+    <string name="singer_renqi_text">人气歌手</string>
+    
+    <!-- 歌手==>歌曲==>更多界面 -->
+    <string name="singer_songs_more_layout_download_text">下载</string>
+    <string name="singer_songs_more_layout_add_text">添加</string>
+    <string name="singer_songs_more_layout_share_text">分享</string>
+    <string name="singer_songs_more_layout_info_text">歌曲信息</string>
+    <string name="singer_songs_tip_text">正在努力加载中...</string>
+
+</resources>

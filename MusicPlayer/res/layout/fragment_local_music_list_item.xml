@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/local_music_list_add"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:drawableTop="@drawable/local_music_item_icon_btn_selector"
+        android:paddingTop="15dp" />
+
+    <TextView
+        android:id="@+id/local_music_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/local_music_list_add" />
+	
+	<TextView
+        android:id="@+id/local_music_list_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>

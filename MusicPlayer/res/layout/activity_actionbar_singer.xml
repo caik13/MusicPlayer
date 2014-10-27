@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 返回 -->
+
+    <ImageButton
+        android:id="@+id/ic_common_title_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_common_title_bar_back" />
+
+    <TextView
+        android:id="@+id/ic_common_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="歌手"
+        android:textSize="@dimen/big_font"
+        android:textColor="@color/white" />
+
+    <!-- 搜索 -->
+
+    <ImageButton
+        android:id="@+id/ic_common_title_search"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_common_title_bar_search" />
+
+</RelativeLayout>

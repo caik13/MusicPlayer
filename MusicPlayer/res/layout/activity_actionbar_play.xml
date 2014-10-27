@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 返回 -->
+
+    <ImageButton
+        android:id="@+id/ic_player_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_player_back" />
+
+    <!-- 歌曲名字 -->
+    
+    <TextView
+        android:id="@+id/ic_player_songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ic_player_back"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/normal_font"
+        android:text="111" />
+
+    <!-- 歌手名字 -->
+    
+    <TextView
+        android:id="@+id/ic_player_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ic_player_back"
+        android:layout_below="@+id/ic_player_songname"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_font"
+        android:layout_marginTop="5dp"
+        android:text="111" />
+    
+    <!-- 分享 -->
+
+    <ImageButton
+        android:id="@+id/ic_player_share"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/ic_player_like"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_player_menu_share" />
+    
+    <!-- like -->
+
+    <ImageButton
+        android:id="@+id/ic_player_like"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/ic_player_more"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_player_like" />
+
+    <!-- 更多 -->
+
+    <ImageButton
+        android:id="@+id/ic_player_more"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:src="@drawable/ic_player_current_playlist" />
+
+</RelativeLayout>

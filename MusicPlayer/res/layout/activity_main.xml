@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_skin_default_thumb"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:persistentDrawingCache="animation" />
+
+    <!-- 阴影 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/playing_bar"
+        android:background="@drawable/playing_bar_stroke" />
+
+    <!-- 屏幕最下方的播放条 -->
+
+    <RelativeLayout
+        android:id="@+id/playing_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/alpha_white_btn_selector"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageView
+            android:id="@+id/playing_bar_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/playing_bar_default_avatar" />
+
+        <SeekBar
+            android:id="@+id/music_progress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/playing_bar_img"
+            android:max="100"
+            android:thumb="@drawable/ic_playing_bar_seeker" />
+
+        <TextView
+            android:id="@+id/play_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/music_progress"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/playing_bar_img"
+            android:text="歌曲名字"
+            android:textSize="@dimen/small_font" />
+
+        <TextView
+            android:id="@+id/play_music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_music_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/playing_bar_img"
+            android:text="歌手"
+            android:textSize="@dimen/small_small_font" />
+
+        <Button
+            android:id="@+id/play_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/music_progress"
+            android:layout_toLeftOf="@+id/next_music"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/playing_bar_playmusic_selector" />
+
+        <Button
+            android:id="@+id/next_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/music_progress"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/playing_bar_nextmusic_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

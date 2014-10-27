@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_skin_default_thumb"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include 
+        android:id="@+id/play_actionbar" 
+        layout="@layout/activity_actionbar_play"/>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/play_down"
+        android:background="@color/white" >
+        
+        <TextView
+            android:id="@+id/play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="0:03" />
+        
+         <SeekBar
+            android:id="@+id/play_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/play_time"
+            android:layout_toLeftOf="@+id/play_max_time"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/ic_playing_bar_seeker" />
+        
+        <TextView
+            android:id="@+id/play_max_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="3:41" />
+
+    </RelativeLayout>
+
+    <!-- 屏幕最下方的播放条 -->
+
+    <RelativeLayout
+        android:id="@+id/play_down"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/alpha_white_btn_selector"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants" >
+        
+        <ImageButton
+            android:id="@+id/play_down_loop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/play_down_play_music"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_mode_all_selector" />
+        
+ 		<ImageButton
+            android:id="@+id/play_down_prev_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/play_down_play_music"
+            android:layout_alignTop="@+id/play_down_play_music"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_prev_selector" />
+ 		
+        <ImageButton
+            android:id="@+id/play_down_play_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_play_selector" />
+
+        <ImageButton
+            android:id="@+id/play_down_next_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/play_down_play_music"
+            android:layout_alignTop="@+id/play_down_play_music"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_next_selector" />
+        
+         <ImageButton
+            android:id="@+id/play_down_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/play_down_play_music"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_menu_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

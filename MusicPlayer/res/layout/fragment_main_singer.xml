@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/activity_actionbar_singer"/>
+    
+    <LinearLayout
+        android:id="@+id/singer_tab_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray2"
+        android:orientation="horizontal" >
+
+        <!-- 华语 -->
+
+        <TextView
+            android:id="@+id/singer_tab_navigation_huayu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/singer_tab_navigation_huayu_text"
+            android:textColor="@color/white" />
+
+        <!-- 欧美 -->
+
+        <TextView
+            android:id="@+id/singer_tab_navigation_oumei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/singer_tab_navigation_oumei_text"
+            android:textColor="@color/white" />
+
+        <!-- 日韩 -->
+
+        <TextView
+            android:id="@+id/singer_tab_navigation_rihan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/singer_tab_navigation_rihan_text"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/singer_boy"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/singer_type_man_btn_selector"
+                android:drawableLeft="@drawable/lbs_title_man"
+                android:paddingLeft="20dp"
+                android:text="@string/singer_tab_man_text" />
+
+            <Button
+                android:id="@+id/singer_girl"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/singer_type_wommen_btn_selector"
+                android:drawableLeft="@drawable/lbs_title_women"
+                android:paddingLeft="20dp"
+                android:text="@string/singer_tab_wommen_text" />
+
+            <Button
+                android:id="@+id/singer_group"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/singer_type_man_wommen_btn_selector"
+                android:drawableLeft="@drawable/singer_man_wommen_selector"
+                android:paddingLeft="20dp"
+                android:text="@string/singer_tab_man_wommen_text" />
+
+            <TextView
+                android:id="@+id/singer_renqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/singer_boy"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/blue"
+                android:text="@string/singer_renqi_text" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/singer_renqi"
+                android:background="@color/blue" />
+            
+            <!-- 歌手列表 -->
+
+            <com.caik13.musicplayer.view.MyListView
+                android:id="@+id/singer_context_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:scrollbars="none" >
+            </com.caik13.musicplayer.view.MyListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

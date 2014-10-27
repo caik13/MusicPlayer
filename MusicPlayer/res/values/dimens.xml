@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin">16dp</dimen>
+    
+    <!--  -->
+    <dimen name="activity_padding">10dp</dimen>
+    
+    
+    <!-- 大一点的字体 -->
+    <dimen name="big_font">18sp</dimen>
+    <!-- 正常字体 --> 
+    <dimen name="normal_font">15sp</dimen>
+    <!-- 小字体 -->
+    <dimen name="small_font">12sp</dimen>
+    <!-- 小小字体(比小字体更小的字体大小) -->
+    <dimen name="small_small_font">8sp</dimen>
+    
+    <!-- 星期按钮宽高 -->
+    <dimen name="week_width_height">40dp</dimen>
+</resources>

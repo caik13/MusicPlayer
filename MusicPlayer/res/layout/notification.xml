@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/notification_singer_img"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/notification_default_icon" />
+
+    <RelativeLayout
+        android:id="@+id/notification_start_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/notification_singer_img"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants" >
+
+        <TextView
+            android:id="@+id/notification_songname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:id="@+id/notification_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/btn_match_close_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/notification_singer_img"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/notification_loop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/ic_player_mode_all_default" />
+
+        <ImageButton
+            android:id="@+id/notification_prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/alarm_prev_btn" />
+
+        <ImageButton
+            android:id="@+id/notification_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/alarm_play_btn" />
+
+        <ImageButton
+            android:id="@+id/notification_next"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/alarm_next_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

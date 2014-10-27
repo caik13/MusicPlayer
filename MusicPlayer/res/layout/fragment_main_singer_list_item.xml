@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingBottom="@dimen/activity_padding"
+    android:paddingTop="@dimen/activity_padding"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 歌手图片 -->
+
+    <ImageView
+        android:id="@+id/singer_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+
+    <!-- 歌手ID -->
+
+    <TextView
+        android:id="@+id/singer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- 歌手名字 -->
+
+    <TextView
+        android:id="@+id/singer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/singer_img"
+        android:text="邓紫棋"
+        android:textSize="15sp" />
+
+    <!-- 歌手介绍 -->
+
+    <TextView
+        android:id="@+id/singer_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singer_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/singer_img"
+        android:text="香港新生代歌手。"
+        android:textSize="@dimen/small_font"
+        android:textColor="@color/gray" />
+
+</RelativeLayout>

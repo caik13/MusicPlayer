@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/singer_songs_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/singer_songs_add"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:src="@drawable/local_music_item_icon_btn_selector" />
+
+        <TextView
+            android:id="@+id/singer_songs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/singer_songs_add" />
+
+        <ImageView
+            android:id="@+id/singer_songs_mv_hq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/singer_songs_more"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/singer_songs_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/singer_songs_up"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!-- 下载 -->
+
+        <Button
+            android:id="@+id/singer_songs_more_layout_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/ic_player_menu_download"
+            android:paddingTop="5dp"
+            android:text="@string/singer_songs_more_layout_download_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- 添加 -->
+
+        <Button
+            android:id="@+id/singer_songs_more_layout_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/ic_player_menu_add_to_playlist"
+            android:paddingTop="5dp"
+            android:text="@string/singer_songs_more_layout_add_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- 分享 -->
+
+        <Button
+            android:id="@+id/singer_songs_more_layout_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/ic_player_menu_share"
+            android:paddingTop="5dp"
+            android:text="@string/singer_songs_more_layout_share_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- 歌曲信息 -->
+
+        <Button
+            android:id="@+id/singer_songs_more_layout_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alpha_blue_btn_selector"
+            android:drawableTop="@drawable/ic_player_menu_details"
+            android:paddingTop="5dp"
+            android:text="@string/singer_songs_more_layout_info_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

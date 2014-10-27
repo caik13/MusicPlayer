@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_app_recommend_logo"
+        android:layout_width="50.0dip"
+        android:layout_height="80.0dip"
+        android:layout_gravity="left"
+        android:scaleType="fitStart"
+        android:src="@+drawable/app_recommend_logo" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_app_info"
+        android:layout_width="250.0dip"
+        android:layout_height="230.0dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10.0dip"
+        android:scaleType="fitCenter"
+        android:src="@+drawable/ic_music_zone_large_avatar_default" />
+
+    <ImageView
+        android:id="@+id/btn_install"
+        android:layout_width="wrap_content"
+        android:layout_height="45.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@+color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@+drawable/guide_install_btn_" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/tv_inter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        android:drawablePadding="5.0dip"
+        android:drawableRight="@+drawable/app_recommend_text_arrow"
+        android:gravity="center_vertical"
+        android:text="进入酷狗音乐"
+        android:textColor="@color/white"
+        android:textSize="@+dimen/textExMediumSize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/alam_playback_icon" />
+
+</LinearLayout>

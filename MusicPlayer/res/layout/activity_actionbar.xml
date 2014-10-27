@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 返回 -->
+
+    <Button
+        android:id="@+id/ic_common_title_back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:drawableLeft="@drawable/ic_common_title_bar_back" />
+
+    <TextView
+        android:id="@+id/ic_common_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white" />
+
+    <!-- 搜索 -->
+
+    <Button
+        android:id="@+id/ic_common_title_search"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ic_common_title_more"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:drawableLeft="@drawable/ic_common_title_bar_search" />
+
+    <!-- 更多 -->
+
+    <Button
+        android:id="@+id/ic_common_title_more"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alpha_blue_btn_selector"
+        android:drawableLeft="@drawable/ic_common_title_bar_menu" />
+
+</RelativeLayout>

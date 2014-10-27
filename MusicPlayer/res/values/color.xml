@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="touming">#00FFFFFF</color> <!-- 透明 -->
+    <color name="touming_black">#60000000</color> <!-- 半透明黑色黑色 -->
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <!-- cc透明白色 cc:为十六进制，00-ff -->
+    <color name="alpha_white">#ccffffff</color>
+    <!-- 按钮按下去的蓝色 -->
+    <color name="blue">#229ef4</color>
+    <!-- action按钮按下去的蓝色 -->
+    <color name="blue_press">#1a7bbf</color>
+
+    <!-- activity的白色背景 -->
+    <color name="activity_white">#f6f6f6</color>
+    
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 灰色 -->
+    <color name="gray2">#404040</color>
+</resources>

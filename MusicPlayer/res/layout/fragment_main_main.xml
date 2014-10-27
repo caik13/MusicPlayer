@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/statusbar_kugou_logo_big" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:background="#00ffffff"
+            android:focusableInTouchMode="true"
+            android:text="@string/login_btn_text"
+            android:textColor="#ffffff" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/navigation_search_selector"
+            android:drawableRight="@drawable/btn_title_search_default"
+            android:ems="10" >
+        </AutoCompleteTextView>
+
+        <LinearLayout
+            android:id="@+id/native_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autoCompleteTextView1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+        		android:id="@+id/native_up"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alpha_white_btn_selector_stroke"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/native_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/native_music_text" />
+
+                <TextView
+                    android:id="@+id/native_music_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/native_music"
+                    android:layout_marginTop="15dp" />
+
+                <Button
+                    android:id="@+id/native_music_play"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/alpha_blue_btn_selector"
+                    android:drawableTop="@drawable/native_music_play_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_native_i_like"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alpha_white_btn_selector"
+                    android:drawableTop="@drawable/native_i_like_selector"
+                    android:paddingTop="18dp"
+                    android:text="@string/btn_native_i_like_text"
+                    android:textSize="@dimen/small_font" />
+
+                <Button
+                    android:id="@+id/btn_native_my_songs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alpha_white_btn_selector"
+                    android:drawableTop="@drawable/native_my_songs_selector"
+                    android:paddingTop="18dp"
+                    android:text="@string/btn_native_my_songs_text"
+                    android:textSize="@dimen/small_font" />
+
+                <Button
+                    android:id="@+id/btn_native_download"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alpha_white_btn_selector"
+                    android:drawableTop="@drawable/native_download_selector"
+                    android:paddingTop="18dp"
+                    android:text="@string/btn_native_download_text"
+                    android:textSize="@dimen/small_font" />
+
+                <Button
+                    android:id="@+id/btn_native_nearlyplay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/alpha_white_btn_selector"
+                    android:drawableTop="@drawable/native_nearlyplay_selector"
+                    android:paddingTop="18dp"
+                    android:text="@string/btn_native_nearlyplay_text"
+                    android:textSize="@dimen/small_font" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ic_navigation_up_lay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/native_native"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <!-- 乐库 -->
+
+            <Button
+                android:id="@+id/ic_navigation_discovery_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alpha_white_btn_selector_stroke"
+                android:drawableLeft="@drawable/ic_navigation_discovery_selector"
+                android:paddingLeft="50dp"
+                android:text="@string/btn_ic_navigation_discovery_text" />
+
+            <!-- 歌手 -->
+
+            <Button
+                android:id="@+id/ic_navigation_singer_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alpha_white_btn_selector_stroke"
+                android:drawableLeft="@drawable/ic_navigation_singer_selector"
+                android:paddingLeft="50dp"
+                android:text="@string/btn_ic_navigation_singer_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ic_navigation_down_lay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/ic_navigation_up_lay"
+            android:orientation="horizontal" >
+
+            <!-- MV -->
+
+            <Button
+                android:id="@+id/ic_navigation_mv_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alpha_white_btn_selector_stroke"
+                android:drawableLeft="@drawable/ic_navigation_mv_selector"
+                android:paddingLeft="50dp"
+                android:text="@string/btn_ic_navigation_mv_text" />
+
+            <!-- 附近 -->
+
+            <Button
+                android:id="@+id/ic_navigation_nearby_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alpha_white_btn_selector_stroke"
+                android:drawableLeft="@drawable/ic_navigation_nearby_selector"
+                android:paddingLeft="50dp"
+                android:text="@string/btn_ic_navigation_nearby_text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/more_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ic_navigation_down_lay"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/alpha_white_btn_selector_stroke"
+            android:drawableLeft="@drawable/ic_navigation_more_selector"
+            android:paddingLeft="150dp"
+            android:paddingRight="150dp"
+            android:text="@string/btn_ic_navigation_more_text" />
+    </RelativeLayout>
+
+</ScrollView>
